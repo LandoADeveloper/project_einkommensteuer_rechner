@@ -15,20 +15,27 @@
     </header>
     <main>
         <section class="inputSection">
-            <label for="selectYear">Einkommenssteuer Jahr: </label>
-            <select name="selectYear" id="selectYear">
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022" selected>2022</option>
+            <article>
+                <label for="selectYear">Einkommenssteuer Jahr: </label>
+                <select name="selectYear" id="selectYear">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022" selected>2022</option>
             </select>
+            </article>
+            
             <article>
                 <input type="radio" name="tarif" id="grundtarif" checked>
                 <label for="grundtarif">Grundtarif</label>
                 <input type="radio" name="tarif" id="splittarif">
                 <label for="splittarif">Splittarif</label>
             </article>
-            <input type="number" id="zvEInput">
-            <input type="button" value="berechnen" onclick="handleCalc()">
+            <article>
+                <label for="zvEInput">Zu versteuerndes Einkommen: </label>
+                <input type="number" id="zvEInput">
+                <input type="button" value="berechnen" onclick="handleCalc()">
+            </article>
+            
         </section>
         <section id="outputSection">
             
